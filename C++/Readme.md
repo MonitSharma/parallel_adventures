@@ -1,1 +1,0 @@
-1. Best Resources to learn C++ [here](https://www.reddit.com/r/cpp_questions/comments/rxx0z5/best_resources_to_learn_c/)
