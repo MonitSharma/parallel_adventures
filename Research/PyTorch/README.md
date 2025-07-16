@@ -11,6 +11,12 @@ These are from [Learn PyTorch for Deep Learning: Zero to Mastery book](https://w
 | 4      | `pytorch_custom_datasets.ipynb`   | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Nkui6B6tEyhD7bJK9jGanm_Xu5igM4pR?usp=sharing) |
 | 5      | `pytorch_going_modular.ipynb`   | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1fHV2UxyymSXvYuwYwdv222-fc3EgUMFc?usp=sharing) |
 | 6      | `pytorch_transfer_learning.ipynb`   | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1uZ9NbTXtfqWwrQJfd__whetSqXrG6B75/view?usp=sharing) |
+| 7      | `pytorch_experiment_tracking.ipynb`   | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1ib3kst_c6a9ibr8JsHp7y7XBdAv_jNsk/view?usp=sharing) |
+
+
+
+
+
 
 
 
