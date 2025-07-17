@@ -60,3 +60,79 @@ int main() {
 
 ---
 
+# **Structs and Memory Layout in C**
+
+A guide to creating compound data types and understanding how they are arranged in memory.
+
+---
+
+## 🧩 What is a Struct?
+
+A `struct` in C is a way to group multiple related variables into a single, logical unit. The variables inside a struct, called **members**, can be of different data types.
+
+> **Key Idea:** Think of a `struct` as a **blueprint** for creating your own custom data type. Once you define the blueprint, you can create multiple "instances" (variables) that follow its structure.
+
+```c
+// This defines the blueprint for a 2D point
+struct Point {
+    float x;
+    float y;
+};
+
+// This creates an instance of the blueprint
+struct Point p1;
+```
+
+---
+
+## 💡 Making Structs Easier with `typedef`
+
+Writing `struct Point` every time can be tedious. You can use `typedef` to create a shorter alias for your struct type.
+
+#### **Before `typedef`:**
+You must use the `struct` keyword to declare a variable.
+```c
+struct Point p;
+```
+
+#### **After `typedef`:**
+You define the alias once, then use it like any other type.
+```c
+typedef struct {
+    float x;
+    float y;
+} Point; // "Point" is now an alias for the struct type
+
+// Now, you can declare variables like this:
+Point p;
+```
+This is standard practice in C for cleaner, more readable code.
+
+---
+
+## 📐 The Secret of `sizeof(struct)`: Memory Padding
+
+You might assume that the size of a struct is simply the sum of its members' sizes. However, this is often not the case due to **memory padding**.
+
+Consider this example:
+```c
+typedef struct {
+    int id;      // 4 bytes
+    char flag;   // 1 byte
+} Example;
+```
+You would expect `sizeof(Example)` to be `4 + 1 = 5` bytes. But on most systems, it will actually be **8 bytes**.
+
+#### Why does this happen?
+
+The compiler adds invisible "padding" bytes to ensure that the struct members are properly **aligned** in memory.
+
+```c
+Expected Layout (5 bytes):
+[ i i i i | c ]
+
+Actual Layout with Padding (8 bytes):
+[ i i i-i | c p p p ]  (p = padding byte added by the compiler)
+```
+
+> **The Reason:** Most CPUs read memory in chunks (e.g., 4 or 8 bytes at a time) and perform best when data like an `int` or `float` starts at a memory address that is a multiple of 4 or 8. The compiler adds padding to enforce this alignment, preventing slower performance or even hardware errors on some systems.
