@@ -4,7 +4,8 @@
 int main() {
     int arr[] = {12, 34, 56, 78, 90};
 
-    // size_t is used to represent the size of an object
+    // size_t is used to represent the size of an object, long unsigned integer type
+    // It is commonly used for array indexing and loop counters.
     size_t size = sizeof(arr) / sizeof(arr[0]); // see the readme
     printf("Size of the array: %zu\n", size);                                 
     printf("Size of size_t: %zu bytes\n", sizeof(size_t));
