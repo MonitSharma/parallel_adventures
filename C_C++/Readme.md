@@ -2,7 +2,7 @@
 
 This repository contains annotated examples and notes for key topics in C and C++ development, covering pointers, memory layout, macros, type casting, compilers, Makefiles, and both CPU & GPU debugging.
 
----
+
 
 ## 📂 Contents
 
@@ -17,7 +17,7 @@ This repository contains annotated examples and notes for key topics in C and C+
 - [GDB: GNU Debugger](#gdb-gnu-debugger)
 - [CUDA-GDB for GPU Debugging](#cuda-gdb-for-gpu-debugging)
 
----
+
 
 ## 🧠 Pointers and Memory Layout
 
@@ -30,7 +30,6 @@ Use cases:
 - Dynamically managing data structures
 - Navigating multidimensional arrays
 
----
 
 ## ❓ Void and NULL Pointers
 
@@ -41,7 +40,7 @@ Use cases:
 **NULL pointers**:
 - Used to indicate a pointer is not currently pointing to a valid memory location
 
----
+
 
 ## 🧮 Arrays, Matrices, and Pointer Arithmetic
 
@@ -50,7 +49,7 @@ We covered:
 - Matrix representation as an array of pointers
 - Contiguous vs non-contiguous memory layouts
 
----
+
 
 ## 🧾 `size_t` and Type Information
 
@@ -61,7 +60,7 @@ We covered:
 
 - `%zu` is the correct format specifier for printing `size_t`
 
----
+
 
 ## 📦 Structs and Memory
 
@@ -75,7 +74,6 @@ Example:
 - Explored how struct memory is allocated
 - `sizeof(Point)` results in 8 bytes due to float members
 
----
 
 ## 🔁 Type Casting in C and C++
 
@@ -94,7 +92,7 @@ Example:
 | `const_cast`       | Adds/removes const (⚠️ risky)                     |
 | `reinterpret_cast` | Dangerous bit-level conversion (⚠️ unsafe)       |
 
----
+
 
 ## 🧾 Macros, Globals, and Conditional Compilation
 
@@ -120,7 +118,7 @@ Example:
         #define radius 7
         #endif
 
----
+
 
 ## 🧰 Makefiles and CMake
 
@@ -152,7 +150,7 @@ Use `.PHONY` to tell make not to treat a file named `clean` as a target:
 - `=` is lazy (re-evaluates on each use)
 - `:=` is immediate (evaluated at definition)
 
----
+
 
 ## 🐞 GDB: GNU Debugger
 
@@ -180,7 +178,7 @@ Use `.PHONY` to tell make not to treat a file named `clean` as a target:
         (gdb) step
         (gdb) continue
 
----
+
 
 ## 🚀 CUDA-GDB for GPU Debugging
 
@@ -200,12 +198,12 @@ Use `.PHONY` to tell make not to treat a file named `clean` as a target:
 - `cuda kernel breakpoints`
 - `print threadIdx.x`
 
----
+
 
 ## 🎓 Further Learning
 
 - Read: https://www.freecodecamp.org/news/what-is-a-compiler-in-c/
-- Watch: https://www.youtube.com/watch?v=Dq8l1_-QgAc
+- Watch: https://www.youtube.com/watch?v=86FAWCzIe_4&list=WL&index=8
 - `man gdb`, `man gcc`, `man make`
 
 ---
