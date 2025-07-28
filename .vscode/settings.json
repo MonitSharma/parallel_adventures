@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "/home/monitsharma/parallel_adventures/C_C++/06_make_files"
+    "cmake.sourceDirectory": "/home/monitsharma/parallel_adventures/C_C++/06_make_files",
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
