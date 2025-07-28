@@ -8,7 +8,9 @@ GPU-accelarated applications offload these time-consuming routines and functions
 
 
 Below figure shws the fundamental difference between CPUs and GPUs.
-![alt text](GPU-transistor-625x314.png)
+
+![alt text](images/GPU-transistor-625x314.png)
+
 
 
 GPUs dedicate most of their transistors for data processing while CPUs also need to reserve die area for big caches, control units, and so on. CPU processors work on the principle of minimizing latency within each thread while GPUs hide the instruction and memory latencies with computation. 
@@ -47,7 +49,7 @@ The CUDA programming model allows scaling software transparently with an increas
 
 In the following image, the compiled CUDA program has eight blocks. the CUDA runtime can chose how to allocate these blocks to multiproceeors as shown with streaming multiprocessors (SMs)
 
-![alt text](cuda-blocks-scalability.png)
+![alt text](images/cuda-blocks-scalability.png)
 
 
 ### Libraries
@@ -84,12 +86,12 @@ CUDA kernel is a function that gets executed on GPU. The parallel portion of the
 
 
 
-![alt text](kernel-as-function.png)
+![alt text](images/kernel-as-function.png)
 
 
 Every CUDA kernel starts with a `__global__` declaration specifier. Programmers provide a unique global ID to each thread by using built-in variables.
 
-![alt text](gpus-in-blocks-625x203.png)
+![alt text](images/gpus-in-blocks-625x203.png)
 
 
 A group of threads is called a CUDA block. CUDA blocks are grouped into a grid. A kernel is executed as a grid of blocks of threads. (as shown in above picture)
@@ -99,4 +101,4 @@ Each CUDA block is executed by one streaming multiprocessor (SM) and cannot be m
 
 
 
- ![alt text](kernel-execution-on-gpu-1-625x438.png)
+![alt text](images/kernel-execution-on-gpu-1-625x438.png)
