@@ -28,7 +28,7 @@ Device 0: "NVIDIA GeForce RTX 3070"
   Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
   Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
   Maximum memory pitch:                          2147483647 bytes
-  Texture alignment:                             512 bytes
+  Texture alignment:                             512 bytes 
   Concurrent copy and kernel execution:          Yes with 1 copy engine(s)
   Run time limit on kernels:                     Yes
   Integrated GPU sharing Host Memory:            No
