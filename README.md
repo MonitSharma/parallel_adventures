@@ -4,23 +4,22 @@ This repository provides a comprehensive exploration of parallel programming con
 
 ## Repository Structure
 
-- `C/`  
+- [`C/`](C/)  
   Contains annotated examples and notes on C and C++ development, including pointers, memory layout, macros, type casting, compilers, Makefiles, and debugging (CPU and GPU).
 
-- `cuda_kernels/`  
+- [`cuda_kernels/`](cuda_kernels/)  
   Includes CUDA kernel examples, device queries, and documentation related to GPU programming and NVIDIA hardware capabilities.
 
-- `LeetGPU/`  
+- [`LeetGPU/`](LeetGPU/)  
   Provides additional CUDA examples and documentation for vector operations and related GPU computations.
 
-- `JAX/`  
+- [`JAX/`](JAX/)  
   Features JAX-based notebooks and resources for parallel programming in Python, including installation instructions and introductory tutorials.
 
-- `PyTorch/`  
+- [`PyTorch/`](PyTorch/)  
   Contains PyTorch notebooks and scripts, primarily based on the "Learn PyTorch for Deep Learning: Zero to Mastery" curriculum, covering fundamentals, workflows, and advanced topics.
 
-
-- `requirements.txt`  
+- [`requirements.txt`](requirements.txt)  
   Lists Python dependencies required for running the JAX and PyTorch notebooks.
 
 ## Getting Started
