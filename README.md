@@ -1,4 +1,4 @@
-# Paralle Advenctures
+# Parallel Advenctures
 
 This repository provides a comprehensive exploration of parallel programming concepts and tools, with a focus on C/C++, CUDA, JAX, and PyTorch. It is designed for developers, researchers, and students interested in understanding and experimenting with parallelism on both CPU and GPU architectures.
 
@@ -19,8 +19,6 @@ This repository provides a comprehensive exploration of parallel programming con
 - `PyTorch/`  
   Contains PyTorch notebooks and scripts, primarily based on the "Learn PyTorch for Deep Learning: Zero to Mastery" curriculum, covering fundamentals, workflows, and advanced topics.
 
-- `images/`  
-  Stores diagrams and visual resources illustrating GPU architecture and parallel execution concepts.
 
 - `requirements.txt`  
   Lists Python dependencies required for running the JAX and PyTorch notebooks.
