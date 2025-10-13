@@ -7,9 +7,10 @@ GPUs were designed for highly parallel computations and were also referred to as
 GPU-accelarated applications offload these time-consuming routines and functions to run on GPUs and take advantahe of massive parallelism.
 
 
-Below figure shws the fundamental difference between CPUs and GPUs.
 
-![alt text](images/GPU-transistor-625x314.png)
+Below figure shows the fundamental difference between CPUs and GPUs.
+
+![alt text](../images/GPU-transistor-625x314.png)
 
 
 
@@ -34,7 +35,7 @@ The CUDA programming model provides three key language extensions to programmers
 3. **Synchronization barriers** - Enable multiple threads to wait until all threads have reached a particular point of execution before any thread continues.
 
 
-![alt text](cuda_kernels/01_cuda_basics/block_address.png)
+![alt text](01_cuda_basics/block_address.png)
 
 
 See [00_vector_addition.cu](https://github.com/MonitSharma/parallel_adventures/blob/main/cuda_kernels/01_cuda_basics/00_vector_addition.cu) for more. 
@@ -49,7 +50,7 @@ The CUDA programming model allows scaling software transparently with an increas
 
 In the following image, the compiled CUDA program has eight blocks. the CUDA runtime can chose how to allocate these blocks to multiproceeors as shown with streaming multiprocessors (SMs)
 
-![alt text](images/cuda-blocks-scalability.png)
+![alt text](../images/cuda-blocks-scalability.png)
 
 
 ### Libraries
@@ -86,12 +87,12 @@ CUDA kernel is a function that gets executed on GPU. The parallel portion of the
 
 
 
-![alt text](images/kernel-as-function.png)
+![alt text](../images/kernel-as-function.png)
 
 
 Every CUDA kernel starts with a `__global__` declaration specifier. Programmers provide a unique global ID to each thread by using built-in variables.
 
-![alt text](images/gpus-in-blocks-625x203.png)
+![alt text](../images/gpus-in-blocks-625x203.png)
 
 
 A group of threads is called a CUDA block. CUDA blocks are grouped into a grid. A kernel is executed as a grid of blocks of threads. (as shown in above picture)
@@ -101,4 +102,4 @@ Each CUDA block is executed by one streaming multiprocessor (SM) and cannot be m
 
 
 
-![alt text](images/kernel-execution-on-gpu-1-625x438.png)
+![alt text](../images/kernel-execution-on-gpu-1-625x438.png)

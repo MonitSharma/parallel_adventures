@@ -1,10 +1,11 @@
-# 📘 C/C++ Debugging & Compiler Exploration
+# C/C++ Programming, Debugging, and Compiler Exploration
 
-This repository contains annotated examples and notes for key topics in C and C++ development, covering pointers, memory layout, macros, type casting, compilers, Makefiles, and both CPU & GPU debugging.
+This directory provides annotated examples, notes, and practical guides for essential topics in C and C++ development. It is intended for students, engineers, and researchers seeking a deeper understanding of low-level programming, memory management, compilation, and debugging on both CPU and GPU platforms.
 
 
 
-## 📂 Contents
+
+## Contents
 
 - [Pointers and Memory Layout](#pointers-and-memory-layout)
 - [Void and NULL Pointers](#void-and-null-pointers)
@@ -19,7 +20,7 @@ This repository contains annotated examples and notes for key topics in C and C+
 
 
 
-## 🧠 Pointers and Memory Layout
+## Pointers and Memory Layout
 
 We explored:
 - Single, double, and triple pointers (`int*`, `int**`, `int***`)
@@ -31,7 +32,7 @@ Use cases:
 - Navigating multidimensional arrays
 
 
-## ❓ Void and NULL Pointers
+## Void and NULL Pointers
 
 **Void pointers**:
 - Can point to any data type
@@ -42,7 +43,7 @@ Use cases:
 
 
 
-## 🧮 Arrays, Matrices, and Pointer Arithmetic
+## Arrays, Matrices, and Pointer Arithmetic
 
 We covered:
 - Iterating arrays using pointer incrementation
@@ -51,7 +52,7 @@ We covered:
 
 
 
-## 🧾 `size_t` and Type Information
+## `size_t` and Type Information
 
 - `size_t` is an unsigned integer type used to express object sizes (in bytes)
 - We computed array length using:
@@ -62,7 +63,7 @@ We covered:
 
 
 
-## 📦 Structs and Memory
+## Structs and Memory
 
 Example:
 
@@ -75,7 +76,7 @@ Example:
 - `sizeof(Point)` results in 8 bytes due to float members
 
 
-## 🔁 Type Casting in C and C++
+## Type Casting in C and C++
 
 ### C-style:
 
@@ -94,7 +95,7 @@ Example:
 
 
 
-## 🧾 Macros, Globals, and Conditional Compilation
+## Macros, Globals, and Conditional Compilation
 
 We explored:
 - `#define`, `#if`, `#elif`, `#else`, `#endif`
@@ -120,7 +121,7 @@ Example:
 
 
 
-## 🧰 Makefiles and CMake
+## Makefiles and CMake
 
 ### Basic Makefile Structure
 
@@ -152,7 +153,7 @@ Use `.PHONY` to tell make not to treat a file named `clean` as a target:
 
 
 
-## 🐞 GDB: GNU Debugger
+## GDB: GNU Debugger
 
 ### Compile with debug symbols:
 
@@ -180,7 +181,7 @@ Use `.PHONY` to tell make not to treat a file named `clean` as a target:
 
 
 
-## 🚀 CUDA-GDB for GPU Debugging
+## CUDA-GDB for GPU Debugging
 
 ### Compile with debug info:
 
@@ -200,10 +201,32 @@ Use `.PHONY` to tell make not to treat a file named `clean` as a target:
 
 
 
-## 🎓 Further Learning
+## Further Learning
 
 - Read: https://www.freecodecamp.org/news/what-is-a-compiler-in-c/
 - Watch: https://www.youtube.com/watch?v=86FAWCzIe_4&list=WL&index=8
 - `man gdb`, `man gcc`, `man make`
 
+
 ---
+
+## Directory Structure
+
+- `00_basics/` – Fundamental C/C++ programs and syntax
+- `01_pointers/` – Pointer operations and memory layout
+- `02_custom_types/` – Structs, typedefs, and custom data types
+- `03_type_casting/` – Type casting in C and C++
+- `04_macros_and_global_vars/` – Macros, global variables, and conditional compilation
+- `05_compilers/` – Compiler usage and notes
+- `06_make_files/` – Makefile and CMake examples
+- `07_debuggers/` – Debugging examples for CPU and GPU
+
+## Getting Started
+
+1. Review the subdirectories for topic-specific code and notes.
+2. Use the provided Makefiles or CMakeLists.txt to build example programs.
+3. Refer to the sections above for explanations and best practices.
+
+## License
+
+This directory is intended for educational and research purposes. Please refer to the main repository license for details.
