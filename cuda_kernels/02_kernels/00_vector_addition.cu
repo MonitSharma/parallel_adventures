@@ -151,3 +151,8 @@ int main() {
 
     return 0;
 }
+
+// nvcc -o vector_addition 00_vector_addition.cu
+// ./vector_addition
+
+// or do cudarun 00_vector_addition.cu

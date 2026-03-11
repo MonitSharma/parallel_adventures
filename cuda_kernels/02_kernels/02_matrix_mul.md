@@ -134,9 +134,10 @@ Each thread reads, one row of A (fixed `row`) amd one column of B (fixed `col`)
 **Result**
 
 ```bash
+Warming up GPU...
 Benchmarking CPU...
-Average CPU time: 0.066711 seconds
+Average CPU time: 0.071151 seconds
 Benchmarking GPU...
-Average GPU time: 0.000706 seconds
-Speedup: 94.55
+Average GPU time: 0.000685 seconds
+Speedup: 103.83
 ```
