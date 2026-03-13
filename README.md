@@ -1,4 +1,7 @@
-# Parallel Advenctures
+# Parallel Adventures
+
+
+![](images/parallel_adventure.png)
 
 This repository provides a comprehensive exploration of parallel programming concepts and tools, with a focus on C/C++, CUDA, JAX, and PyTorch. It is designed for developers, researchers, and students interested in understanding and experimenting with parallelism on both CPU and GPU architectures.
 
